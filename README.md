@@ -55,7 +55,7 @@ FROM customers
 WHERE postal_code = '1010'
 ```
 
-* [ ] ***find the phone number for the supplier with the id 11. Should be (010) 9984510***
+* [x] ***find the phone number for the supplier with the id 11. Should be (010) 9984510***
 
   <details><summary>hint</summary>
 
@@ -63,7 +63,9 @@ WHERE postal_code = '1010'
   </details>
 
 ```SQL
-
+SELECT supplier_id, phone, company_name, contact_name
+FROM suppliers
+WHERE supplier_id = '11'
 ```
 
 * [ ] ***list orders descending by the order date. The order with date 1998-05-06 should be at the top***
