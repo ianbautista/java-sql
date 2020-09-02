@@ -95,7 +95,7 @@ FROM suppliers
 WHERE LENGTH(company_name) > 20
 ```
 
-* [ ] ***find all customers that include the word 'MARKET' in the contact title. Should return 19 records***
+* [x] ***find all customers that include the word 'MARKET' in the contact title. Should return 19 records***
 
   <details><summary>hint</summary>
 
@@ -105,7 +105,9 @@ WHERE LENGTH(company_name) > 20
   </details>
 
 ```SQL
-
+SELECT contact_title
+FROM customers
+WHERE UPPER(contact_title) like '%MARKET%'
 ```
 
 * [ ] ***add a customer record for***
