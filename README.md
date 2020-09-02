@@ -257,7 +257,7 @@ Table Name:
 
 ### Stretch Goals
 
-- [ ] **_delete all customers that have no orders. Should delete 2 (or 3 if you haven't deleted the record added) records_**
+- [] **_delete all customers that have no orders. Should delete 2 (or 3 if you haven't deleted the record added) records_**
 
 ```SQL
 
